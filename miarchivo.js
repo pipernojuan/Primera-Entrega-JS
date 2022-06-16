@@ -21,8 +21,6 @@ function calcule (precio, cant, provincia) {
 
 
 
-var ciudades [brc, mdz, ush]
-
 function capturar (){
     function Ciudad (nombre, epoca, gastronomia){
         this.nombre = nombre;
@@ -31,8 +29,9 @@ function capturar (){
     }
     var nombreCapturar = document.getElementById("nombre").value;
     var epocaCapturar = document.getElementById("epoca").value;
+    var gastronomiaCapturar = document.getElementById("gastronomia").value;
 
-    var nuevoSujeto = new Persona(nombreCapturar, epocaCapturar);
+    nuevoSujeto = new Ciudad (nombreCapturar, epocaCapturar, gastronomiaCapturar);
     console.log(nuevoSujeto);
     agregar ();
 }
