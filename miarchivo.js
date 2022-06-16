@@ -24,24 +24,22 @@ const ciudades = ['Ushuaia','Bariloche','Mendoza']
 
 // Objetos
 
-const brc = {
-    mejorEpoca: "Invierno",
-    mejorAtractivo: "Lago Nahuel Huapi",
-    grastronomia: "Chivito Patagónico",
+function Ciudad (mejorEpoca, buenDestino, gastronomia){
+    this.mejorEpoca = mejorEpoca;
+    this.buenDestino = buenDestino;
+    this.gastronomia = gastronomia;
 }
 
-const mdz = {
-    mejorEpoca: "Indistinto",
-    mejorAtractivo: "Cañon de Atuel",
-    grastronomia: "Viñedos",
-}
+var brc = new Ciudad ("Invierno", true, "Chivito Patagónico");
+console.log (brc);
 
-const ush = {
-    mejorEpoca: "Invierno",
-    mejorAtractivo: "Faro del Fin del Mundo",
-    gastronomia: "Centolla",
-}
+var mdz = new Ciudad ("Indistinto", true, "Viñedos");
+console.log (mdz);
 
-console.log (brc.mejorEpoca)
-console.log (brc.mejorAtractivo)
-console.log (brc.gastronomia)
+var ush = new Ciudad ("Invierno", true,"Centolla");
+console.log (ush);
+
+
+// Array
+
+var ciudades [brc, mdz, ush]
