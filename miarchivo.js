@@ -20,6 +20,7 @@ function calcule (precio, cant, provincia) {
 }
 
 
+// Constructor
 
 function capturar (){
     function Ciudad (nombre, epoca, gastronomia){
