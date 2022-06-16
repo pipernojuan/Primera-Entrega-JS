@@ -19,14 +19,7 @@ function calcule (precio, cant, provincia) {
     }
 }
 
-// Variables
 
-
-// Objetos
-
-
-
-// Array
 
 var ciudades [brc, mdz, ush]
 
@@ -40,4 +33,11 @@ function capturar (){
     var epocaCapturar = document.getElementById("epoca").value;
 
     var nuevoSujeto = new Persona(nombreCapturar, epocaCapturar);
+    console.log(nuevoSujeto);
+    agregar ();
+}
+
+var baseDatos= [];
+function agregar (){
+    baseDatos.push (nuevoSujeto)
 }
