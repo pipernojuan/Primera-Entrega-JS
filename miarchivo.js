@@ -20,26 +20,24 @@ function calcule (precio, cant, provincia) {
 }
 
 // Variables
-const ciudades = ['Ushuaia','Bariloche','Mendoza']
+
 
 // Objetos
 
-function Ciudad (mejorEpoca, buenDestino, gastronomia){
-    this.mejorEpoca = mejorEpoca;
-    this.buenDestino = buenDestino;
-    this.gastronomia = gastronomia;
-}
-
-var brc = new Ciudad ("Invierno", true, "Chivito Patagónico");
-console.log (brc);
-
-var mdz = new Ciudad ("Indistinto", true, "Viñedos");
-console.log (mdz);
-
-var ush = new Ciudad ("Invierno", true,"Centolla");
-console.log (ush);
 
 
 // Array
 
 var ciudades [brc, mdz, ush]
+
+function capturar (){
+    function Ciudad (nombre, epoca, gastronomia){
+        this.nombre = nombre;
+        this.epoca = epoca;
+        this.gastronomia = gastronomia;
+    }
+    var nombreCapturar = document.getElementById("nombre").value;
+    var epocaCapturar = document.getElementById("epoca").value;
+
+    var nuevoSujeto = new Persona(nombreCapturar, epocaCapturar);
+}
