@@ -35,8 +35,7 @@ function capturar (){
     console.log(nuevoSujeto);
     agregar ();
 }
-
-var baseDatos= [];
-function agregar (){
-    baseDatos.push (nuevoSujeto)
+    var baseDatos= [];
+    function agregar (){
+        baseDatos.push (nuevoSujeto)
 }
