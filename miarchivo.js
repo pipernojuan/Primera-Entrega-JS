@@ -34,8 +34,9 @@ function capturar (){
     nuevoSujeto = new Ciudad (nombreCapturar, epocaCapturar, gastronomiaCapturar);
     console.log(nuevoSujeto);
     agregar ();
-}
+};
     var baseDatos= [];
-    function agregar (){
-        baseDatos.push (nuevoSujeto)
-}
+    function agregar() {
+        baseDatos.push(nuevoSujeto)
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.epoca+'</td><td>'+nuevoSujeto.gastronomia+'</td></tbody>';
+};
